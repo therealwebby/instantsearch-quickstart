@@ -1,0 +1,15 @@
+<div class="hit">
+  <div class="hit__image-container">
+    <img class="hit__image" src="{{image}}" alt="{{name}}">
+  </div>
+  <div class="hit__metadata">
+    <h1 class="hit__title">{{{_highlightResult.name.value}}}</h1>
+    <p class="hit__categories">
+      {{hierarchicalCategories.lvl1}}{{hierarchicalCategories.lvl2}}{{hierarchicalCategories.lvl3}}{{hierarchicalCategories.lvl4}}
+    </p>
+    <p class="hit__rating">
+      <span class="hit__rating-star hit__rating-star--{{rating}}"></span>
+    </p>
+    <p class="hit__description">{{{_highlightResult.description.value}}}</p>
+  </div>
+</div>
